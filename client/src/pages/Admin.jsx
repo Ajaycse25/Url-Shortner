@@ -29,7 +29,7 @@ export default function Admin() {
                 <td className="border border-gray-700 px-4 py-2 break-all">{url.longUrl}</td>
                 <td className="border border-gray-700 px-4 py-2">
                   <a
-                    href={`http://localhost:5000/${url.shortCode}`}
+                    href={`https://url-shortner-backend-i9sf.onrender.com/${url.shortCode}`}
                     target="_blank"
                     rel="noreferrer"
                     className="text-blue-400 hover:underline"
