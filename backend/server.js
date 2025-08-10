@@ -23,7 +23,7 @@ app.post('/api/shorten', async (req, res) => {
   const newUrl = new Url({ longUrl, shortCode });
   await newUrl.save();
 
-  res.json({ shortUrl: `http://localhost:5000/${shortCode}` });
+  res.json({ shortUrl: `https://url-shortner-backend-i9sf.onrender.com/${shortCode}` });
 });
 
 // GET /:shortcode → Redirect
