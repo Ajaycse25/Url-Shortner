@@ -5,7 +5,7 @@ export default function Admin() {
   const [urls, setUrls] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/admin')
+    axios.get('https://url-shortner-backend-i9sf.onrender.com/api/admin')
       .then(res => setUrls(res.data))
       .catch(err => console.error(err));
   }, []);
